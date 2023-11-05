@@ -1,0 +1,30 @@
+.icon {
+    display: flex;
+    justify-content: space-between;
+
+    &__card {
+
+        &-img {
+            margin-top: 160px;
+        }
+
+        &-title {
+            font-family: var(--GB);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-top: 40px;
+        }
+
+        &-desc {
+            width: 371px;
+            font-family: var(--GR);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #6B6B6B;
+            text-align: center;
+            margin-top: 17px;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.header {
+    height: 100vh;
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%),
+        linear-gradient(0deg, #CF0063, #CF0063);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 40px;
+
+        &-navbar {
+
+            &-list {
+                display: flex;
+                gap: 30px;
+
+                &-item {
+                    font-family: var(--GR);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: white;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 0px;
+                        height: 1px;
+                        background: white;
+                        opacity: 0;
+                        position: absolute;
+                        bottom: -2px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: 0.3s;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 83px;
+                        height: 1px;
+                        background: white;
+                        opacity: 0;
+                        position: absolute;
+                        top: -2px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: 0.3s;
+                    }
+
+                    &:hover::before {
+                        opacity: 1;
+                        width: 83px;
+                    }
+
+                    &:hover::after {
+                        top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+
+        &-desc {
+
+            &-title {
+                font-family: var(--GR);
+                font-size: 80px;
+                font-weight: 400;
+                line-height: 80px;
+                color: white;
+            }
+
+            &-paragraph {
+                font-family: var(--GR);
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 44px;
+                color: white;
+                margin-top: 10px;
+            }
+
+            &-btn {
+                font-family: var(--GR);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: white;
+                background: #FC0A7E;
+                padding: 20px 40px;
+                margin-top: 45px;
+                transition: 0.3s;
+
+                &:hover {
+                    background: white;
+                    color: #FC0A7E;
+                }
+            }
+        }
+
+        &-img {
+            margin-top: 60px;
+        }
+    }
+}

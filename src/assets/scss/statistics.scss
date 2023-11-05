@@ -1,0 +1,25 @@
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    &__card {
+        text-align: center;
+
+        &-title {
+            font-family: var(--GR);
+            font-size: 59px;
+            font-weight: 400;
+            line-height: 90px;
+            margin-top: 163px;
+        }
+
+        &-desc {
+            font-family: var(--GB);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+    }
+}
